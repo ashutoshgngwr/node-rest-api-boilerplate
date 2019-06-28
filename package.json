@@ -1,0 +1,53 @@
+{
+  "name": "node-rest-api-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate to easily setup new RESTful microservices.",
+  "main": "index.js",
+  "private": true,
+  "license": "MIT",
+  "author": {
+    "name": "Ashutosh Gangwar",
+    "email": "ashutoshgngwr@gmail.com",
+    "url": "https://ashutoshgngwr.github.io"
+  },
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "nodemon --exec mocha --recursive src/tests",
+    "check-coverage": "nyc mocha --recursive src/tests",
+    "precommit": "lint-staged",
+    "commit": "git-cz"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "commitizen": "3.0.5",
+    "cz-conventional-changelog": "2.1.0",
+    "eslint": "5.12.1",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-config-prettier": "3.6.0",
+    "eslint-plugin-import": "2.15.0",
+    "eslint-plugin-prettier": "3.0.1",
+    "eslint-plugin-promise": "4.0.1",
+    "lint-staged": "8.1.0",
+    "mocha": "5.2.0",
+    "nodemon": "1.18.9",
+    "nyc": "13.2.0",
+    "prettier": "1.16.1",
+    "sinon": "7.2.3"
+  },
+  "dependencies": {
+    "fastify": "1.13.4",
+    "fastify-openapi-glue": "1.0.4",
+    "mongoose": "5.4.6"
+  },
+  "lint-staged": {
+    "*.{js,css,json,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}

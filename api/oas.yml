@@ -1,0 +1,16 @@
+openapi: 3.0.0
+info:
+  title: "Boilerplate API"
+  version: "0.0.1"
+paths:
+  /:
+    get:
+      operationId: "helloWorld"
+      summary: "Hello world endpoint"
+      responses:
+        200:
+          description: "success"
+          content:
+            application/json:
+              schema:
+                type: "string"
