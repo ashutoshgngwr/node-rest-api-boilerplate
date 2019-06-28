@@ -9,7 +9,7 @@ HTTP Routes are auto-generated based on API definition (written in [OpenAPI Spec
 - [Fastify][fastify]
 - [fastify-openapi-glue][fastify-openapi-glue-git]
 - [Mongoose][mongoose]
-- [Mocha][mocha], [NYC][nyc], [Sinon][sinon] and [Chai][chai] for automated testing
+- [Mocha][mocha], [NYC][nyc], [Sinon][sinon] and [Chai][chai] for automated testing and related metrics
 
 ## Environment Variables
 
@@ -17,8 +17,9 @@ HTTP Routes are auto-generated based on API definition (written in [OpenAPI Spec
 
 ## Project Structure
 
-- `api/spec.yml` is the source of truth (definition) of the REST API.
-- `src/app.js` contains the boilerplate code to connect MongoDB client.
+- `api/oas.yml` is the source of truth (definition) of the REST API.
+- `src/app.js` contains the boilerplate code to connect MongoDB client and to register
+  `fastify-openapi-glue` middleware with proper configuration.
 - `src/service.js` would contain implementations of all the operations defined in API defintion
   (ommitted in this boilerplate).
 - `src/tests` contains cases to automate API testing.
