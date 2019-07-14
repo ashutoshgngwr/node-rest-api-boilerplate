@@ -33,7 +33,7 @@
     "nodemon": "1.18.9",
     "nyc": "13.2.0",
     "prettier": "1.16.1",
-    "sinon": "7.2.3"
+    "sinon": "7.3.2"
   },
   "dependencies": {
     "fastify": "1.13.4",
