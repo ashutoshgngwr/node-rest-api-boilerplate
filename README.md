@@ -1,6 +1,6 @@
 # node-rest-api-boilerplate
 
-A boilerplate to quicky start building REST APIs in NodeJS without writing (_too much_) boilerplate code.
+A boilerplate to quickly start building REST APIs in NodeJS without writing (_too much_) boilerplate code.
 HTTP Routes are auto-generated based on API definition (written in [OpenAPI Specification][open-api-spec]).
 
 ## Framework Stack
@@ -20,8 +20,8 @@ HTTP Routes are auto-generated based on API definition (written in [OpenAPI Spec
 - `api/oas.yml` is the source of truth (definition) of the REST API.
 - `src/app.js` contains the boilerplate code to connect MongoDB client and to register
   `fastify-openapi-glue` middleware with proper configuration.
-- `src/service.js` would contain implementations of all the operations defined in API defintion
-  (ommitted in this boilerplate).
+- `src/service.js` would contain implementations of all the operations defined in API definition
+  (omitted in this boilerplate).
 - `src/tests` contains cases to automate API testing.
 - `index.js` contains the boilerplate code to start [Fastify][fastify] server at port `8080`.
 
