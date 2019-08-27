@@ -38,7 +38,7 @@
   "dependencies": {
     "fastify": "2.7.1",
     "fastify-openapi-glue": "1.2.0",
-    "mongoose": "5.6.10"
+    "mongoose": "5.6.11"
   },
   "lint-staged": {
     "*.{js,css,json,md}": [
