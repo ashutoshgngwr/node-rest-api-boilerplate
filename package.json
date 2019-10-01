@@ -36,7 +36,7 @@
     "sinon": "7.5.0"
   },
   "dependencies": {
-    "fastify": "2.8.0",
+    "fastify": "2.9.0",
     "fastify-openapi-glue": "1.2.0",
     "mongoose": "5.7.3"
   },
