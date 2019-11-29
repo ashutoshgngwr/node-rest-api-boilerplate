@@ -243,15 +243,14 @@ acorn@^7.0.0:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.0.0.tgz#26b8d1cd9a9b700350b71c0905546f64d1284e7a"
   integrity sha512-PaF/MduxijYYt7unVGRuds1vBC9bFxbNf+VWqhOClfdgy7RlVkQqt610ig1/yxTgsDIfW1cWDel5EBbOy3jdtQ==
 
-ajv-oai@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/ajv-oai/-/ajv-oai-1.1.1.tgz#5f3c19ebc6b1628465bc75436c1ade9031b3cab3"
-  integrity sha1-XzwZ68axYoRlvHVDbBrekDGzyrM=
+ajv-oai@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/ajv-oai/-/ajv-oai-1.1.5.tgz#f6a3ffa6a84ee90234a296ef733e9e18c875365e"
+  integrity sha512-JSBfA99K9cI22qJ8rwCyJ7J15iEMFOeHL8LqH+PL47HzeN7YZc7ZazQNg9eLO6TuPLBCfkiuMNLulKTGMzp25w==
   dependencies:
-    ajv "^6.1.1"
-    decimal.js "^9.0.1"
+    decimal.js "^10.2.0"
 
-ajv@^6.1.1, ajv@^6.10.0, ajv@^6.10.2, ajv@^6.8.1, ajv@^6.9.1:
+ajv@^6.10.0, ajv@^6.10.2, ajv@^6.8.1, ajv@^6.9.1:
   version "6.10.2"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.10.2.tgz#d3cea04d6b017b2894ad69040fec8b623eb4bd52"
   integrity sha512-TXtUUEYHuaTEbLZWIKUr5pmBuhDLy+8KYtPYdcV8qC+pOZL+NKqYwvWSRrVXHn+ZmRRAu8vJTAznH7Oag6RVRw==
@@ -973,10 +972,10 @@ decamelize@^1.2.0:
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
 
-decimal.js@^9.0.1:
-  version "9.0.1"
-  resolved "https://registry.yarnpkg.com/decimal.js/-/decimal.js-9.0.1.tgz#1cc8b228177da7ab6498c1cc06eb130a290e6e1e"
-  integrity sha512-2h0iKbJwnImBk4TGk7CG1xadoA0g3LDPlQhQzbZ221zvG0p2YVUedbKIPsOZXKZGx6YmZMJKYOalpCMxSdDqTQ==
+decimal.js@^10.2.0:
+  version "10.2.0"
+  resolved "https://registry.yarnpkg.com/decimal.js/-/decimal.js-10.2.0.tgz#39466113a9e036111d02f82489b5fd6b0b5ed231"
+  integrity sha512-vDPw+rDgn3bZe1+F/pyEwb1oMG2XTlRVgAa6B4KccTEpYgF8w6eQllVbQcfIJnZyvzFtFpxnpGtx8dd7DJp/Rw==
 
 decode-uri-component@^0.2.0:
   version "0.2.0"
@@ -1479,16 +1478,17 @@ fast-safe-stringify@^2.0.6:
   resolved "https://registry.yarnpkg.com/fast-safe-stringify/-/fast-safe-stringify-2.0.6.tgz#04b26106cc56681f51a044cfc0d76cf0008ac2c2"
   integrity sha512-q8BZ89jjc+mz08rSxROs8VsrBBcn1SIw1kq9NjolL509tkABRk9io01RAjSaEv1Xb2uFLt8VtRiZbGp5H8iDtg==
 
-fastify-openapi-glue@1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/fastify-openapi-glue/-/fastify-openapi-glue-1.3.0.tgz#606c57459d3d4591bd156af81527ea19a5699122"
-  integrity sha512-yqvmcsdxrzz/YwNG8E4Z/tO4wkfnYjdMjnNfDd7qi8SakInNrU1LQ605wm9c2V81j3xzq2DjxZjVfGmcL64C4g==
+fastify-openapi-glue@1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/fastify-openapi-glue/-/fastify-openapi-glue-1.3.1.tgz#e76abf43842882917228c696f85abf7819e1bde5"
+  integrity sha512-jzR5yJlXke2UdpsR/OUdCWbLxmCjmyP7PCN5ssvp2NhA46DzZNXUvb1Bsq8AwStvs7oVYu00t6/u7yB3Kbs8+Q==
   dependencies:
-    ajv-oai "^1.1.1"
+    ajv "^6.10.2"
+    ajv-oai "^1.1.5"
     fastify-plugin "^1.6.0"
     js-yaml "^3.13.1"
     minimist "^1.2.0"
-    swagger-parser "^8.0.2"
+    swagger-parser "^8.0.3"
 
 fastify-plugin@^1.6.0:
   version "1.6.0"
@@ -4374,7 +4374,7 @@ swagger-methods@^2.0.1:
   resolved "https://registry.yarnpkg.com/swagger-methods/-/swagger-methods-2.0.2.tgz#5891d5536e54d5ba8e7ae1007acc9170f41c9590"
   integrity sha512-/RNqvBZkH8+3S/FqBPejHxJxZenaYq3MrpeXnzi06aDIS39Mqf5YCUNb/ZBjsvFFt8h9FxfKs8EXPtcYdfLiRg==
 
-swagger-parser@^8.0.2:
+swagger-parser@^8.0.3:
   version "8.0.3"
   resolved "https://registry.yarnpkg.com/swagger-parser/-/swagger-parser-8.0.3.tgz#2f577527c5307d94050785cfb8939aaefe3575d8"
   integrity sha512-y2gw+rTjn7Z9J+J1qwbBm0UL93k/VREDCveKBK6iGjf7KXC6QGshbnpEmeHL0ZkCgmIghsXzpNzPSbBH91BAEQ==
